@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubTran</title>
+  <link rel="stylesheet" href="https://nope.rhg.dev/dist/2.0.0/nope.min.css">
+  <style>
+    .min-width--440 { min-width: 440px; }
+    .max-width--120 { max-width: 120px; }
+    .border-light { border: solid #ccc 1px; }
+    .shadow { box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.25); }
+    .clickable { cursor: pointer; transition: opacity 200ms ease-in-out; }
+    .clickable:hover { opacity: 0.6; }
+    .bg-shadow { background: rgba(0, 0, 0, 0.5); }
+    .bg-white { background: white; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="./dist/elm.js"></script>
+  <script>
+    Elm.Main.init({ node: document.getElementById('app') })
+  </script>
+</body>
+</html>
